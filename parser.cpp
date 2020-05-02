@@ -12,6 +12,5 @@ Parser::getToken(ifstream &){
 
 
 Parser::setDelimitador(char _delim){
-
-
+    delim = _delim;
 }
