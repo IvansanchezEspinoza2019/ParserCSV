@@ -6,7 +6,9 @@ Parser::Parser()
 {
 
 }
-Parser::getToken(ifstream &_archivo){
+
+
+std::string Parser::getToken(ifstream &_archivo){
     if(!_archivo){
         // if error
 
@@ -115,6 +117,6 @@ Parser::getToken(ifstream &_archivo){
 }
 
 
-Parser::setDelimitador(char _delim){
+void Parser::setDelimitador(char _delim){
     delim = _delim;
 }
